@@ -1,5 +1,5 @@
 alert(
-  "THIS PAGE IS NOT a real pre-ordering page. Don't enter information you als wouldn't give out to strangers."
+  "THIS IS A PHISHING WEBSITE! Don't enter information you als wouldn't give out to strangers."
 );
 
 scrollDown = () => {
