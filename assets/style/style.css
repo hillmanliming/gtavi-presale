@@ -1,0 +1,90 @@
+/* =======================================GENERAL====================== */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeueMedium";
+  color: white;
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url(../../assets/fonts/HelveticaNeueMedium.woff2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+:root {
+  --purple: #663366;
+  --white: #ffffff;
+  --titlecolor: #2d3b45;
+  --main-title: 3rem;
+  --sub-title: 2rem;
+  --par: 1.3rem;
+  --small: 0.7rem;
+  --margin: 3%;
+  --padding: 3%;
+}
+
+/* ========================================================================= */
+
+body {
+  min-height: 100vh;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+  color: white;
+  background-image: url(../img/background-img.jpg);
+  /* https://www.uhdpaper.com/2023/12/grand-theft-auto-6-video-game-4k-2851n.html */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+}
+
+.container > p {
+  font-family: "HelveticaNeueMedium";
+  font-size: 1.4rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.container > p:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.025s ease;
+}
+
+#form-section {
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
