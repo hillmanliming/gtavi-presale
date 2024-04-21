@@ -9,25 +9,67 @@
   </head>
   <body>
     <section class="container">
-      <p onclick="scrollDown()">
-        Sign up for GTA VI presale <br />Coming Soon!
-      </p>
+      <p onclick="scrollDown()">Pre-order GTA VI<br /></p>
     </section>
+
     <section id="form-section">
+      <article>
+        <h3>
+          Grand Theft Auto VI, the long awaited sequal of the infamous GTA V is
+          nearing its launch! Pre-order now and recieve several in-game items
+          along side early acces and more, on launch day!
+        </h3>
+        <br /><br />
+        <ul>
+          <li>
+            <b>Early Access:</b> By participating in the presale, you can secure
+            a copy ahead of the official release date, ensuring you'll be among
+            the first to play GTA 6.
+          </li>
+          <li>
+            <b>Exclusive Content</b>: The preorders comes with bonuses and
+            several in-game items. One of which being a vehicle exlusive to
+            pre-order only.
+          </li>
+          <li>
+            <b>Support the developers:</b> 25% of the pre-sale profit goes to
+            the GTA VI developers at Rockstar Games who are working long and
+            hard to offer the best off launch experience they can offer. By
+            taking part in the pre-sale you can show your appreciation to them!
+          </li>
+        </ul>
+      </article>
       <form id="form">
         <label for="name">First name:</label>
-        <input type="text" id="Fname" name="Fname" required /><br /><br />
+        <input
+          type="text"
+          id="Fname"
+          name="Fname"
+          required
+          minlength="2"
+          maxlength="10"
+        /><br /><br />
 
-        <label for="name">Last name:</label>
-        <input type="text" id="Lname" name="Lname" required /><br /><br />
+        <label for="name">Last name :</label>
+        <input
+          type="text"
+          id="Lname"
+          name="Lname"
+          required
+          minlength="2"
+          maxlength="10"
+        /><br /><br />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="email">Rockstar e-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          href="www.google.com"
+        /><br /><br />
 
-        <label for="age">Age (must be 18 years or older):</label>
-        <input type="number" id="age" name="age" required /><br /><br />
-
-        <input type="submit" value="Submit" />
+        <button type="submit" value="submit">Pre-order</button>
       </form>
     </section>
   </body>
