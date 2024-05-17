@@ -8,10 +8,6 @@
     <link rel="icon" type="image/png" href="assets/img/icon.webp" />
   </head>
   <body>
-    <section class="container">
-      <p onclick="scrollDown()">Pre-order GTA VI<br /></p>
-    </section>
-
     <section id="form-section">
       <article>
         <h3>
@@ -39,7 +35,7 @@
           </li>
         </ul>
       </article>
-      <form id="form">
+      <form onsubmit="event.preventDefault(); retrieveFormData();" id="form">
         <label for="name">First name:</label>
         <input
           type="text"
@@ -69,20 +65,11 @@
           href="www.google.com"
         /><br /><br />
 
-        <button id="submit" type="submit" value="submit" formaction="payment.html">
+        <button id="submit" type="submit" formaction="payment.html">
           Pre-order
         </button>
       </form>
     </section>
-<!-- PAYMENT PART ====================================== -->
-    <article id="payment">
-      <p>
-      <div class="evenly"><h2>GTAVI: Pre-Order</h2><div id="close">x</div></div>
-       <br>
-      PAYMENT VIA IDEAL
-      <br><br>
-        </p>
-    </article>
   </body>
   <script src="assets/script/javascript.js"></script>
 </html>

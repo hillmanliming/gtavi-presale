@@ -100,6 +100,36 @@ body {
   justify-items: center;
 }
 
+#payment {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2d2d2d;
+  width: 45%;
+  height: 95%;
+  border-radius: 4px;
+  padding: 2%;
+}
+
+.evenly {
+  display: flex;
+  justify-content: space-between;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 50%;
+}
+#ideal {
+  background-color: #e0e0e0;
+  padding: 5%;
+}
+
 form {
   display: flex;
   flex-direction: column;
