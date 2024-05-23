@@ -153,13 +153,6 @@ button {
 	padding: 2%;
 }
 
-.blur {
-	height: 100%;
-	width: 100%;
-	filter: blur(15px);
-	z-index: 50;
-}
-
 .payment-grid {
 	display: grid;
 	grid-template-columns: 1.4fr 1fr;
@@ -326,6 +319,7 @@ main {
 	padding: 10px;
 	border-right: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+	max-width: 100%;
 }
 .pointer {
 	cursor: pointer;

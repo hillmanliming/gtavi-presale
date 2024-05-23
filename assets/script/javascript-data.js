@@ -37,13 +37,14 @@ document.getElementById("refresh-page").addEventListener("click", function () {
 	window.location.reload();
 });
 
-// Display the data on page load
-
 // Set the refresh interval in seconds
 // Change this to the desired interval
-// const refreshInterval = 10;
+const refreshInterval = 5;
 
 // Function to refresh the page
 function refreshPage() {
 	window.location.reload();
 }
+
+// Set the interval to call the refreshPage function every x seconds
+setInterval(refreshPage, refreshInterval * 1000); // Convert seconds to milliseconds
