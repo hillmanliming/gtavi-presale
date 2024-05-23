@@ -1,152 +1,351 @@
 /* =======================================GENERAL====================== */
 *::before,
 *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "HelveticaNeueMedium";
-  color: white;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeueMedium";
+	color: white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "HelveticaNeueMedium";
-  src: url(../../assets/fonts/HelveticaNeueMedium.woff2);
+	font-family: "HelveticaNeueMedium";
+	src: url(../../assets/fonts/HelveticaNeueMedium.woff2);
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 img,
 picture,
 svg,
 video {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 input,
 textarea,
 button,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 :root {
-  --purple: #663366;
-  --white: #ffffff;
-  --titlecolor: #2d3b45;
-  --main-title: 3rem;
-  --sub-title: 2rem;
-  --par: 1.3rem;
-  --small: 0.7rem;
-  --margin: 3%;
-  --padding: 3%;
+	--purple: #663366;
+	--white: #ffffff;
+	--titlecolor: #2d3b45;
+	--main-title: 3rem;
+	--sub-title: 2rem;
+	--par: 1.3rem;
+	--small: 0.7rem;
+	--margin: 3%;
+	--padding: 3%;
 }
 
 /* ========================================================================= */
 
 body {
-  min-height: 100vh;
-  background-color: black;
+	min-height: 100vh;
+	background-color: black;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  height: 100vh;
-  color: white;
-  background-image: url(../img/background-img.jpg);
-  /* https://www.uhdpaper.com/2023/12/grand-theft-auto-6-video-game-4k-2851n.html */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	height: 100vh;
+	color: white;
+	background-image: url(../img/background-img.jpg);
+	/* https://www.uhdpaper.com/2023/12/grand-theft-auto-6-video-game-4k-2851n.html */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	background-size: cover;
 }
 
 .container > p {
-  font-family: "HelveticaNeueMedium";
-  font-size: 1.4rem;
-  margin-bottom: 5%;
-  text-align: center;
+	font-family: "HelveticaNeueMedium";
+	font-size: 1.4rem;
+	margin-bottom: 5%;
+	text-align: center;
 }
 .container > p:hover {
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: 0.025s ease;
+	cursor: pointer;
+	transition: 0.025s ease;
+}
+
+.pulse {
+	animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		font-size: 1.2rem;
+	}
+
+	50% {
+		font-size: 1.5rem;
+	}
+
+	100% {
+		font-size: 1.2rem;
+	}
 }
 
 #form-section {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5%;
-  font-size: 1.125rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/background-img2.jpg);
-  /* https://image-1.uhdpaper.com/wallpaper/grand-theft-auto-6-hd-wallpaper-uhdpaper.com-275@1@n.jpg */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-items: center;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5%;
+	font-size: 1.125rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../img/background-img2.jpg);
+	/* https://image-1.uhdpaper.com/wallpaper/grand-theft-auto-6-hd-wallpaper-uhdpaper.com-275@1@n.jpg */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	justify-items: center;
 }
 
-#payment {
-  display: block;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #2d2d2d;
-  width: 45%;
-  height: 95%;
-  border-radius: 4px;
-  padding: 2%;
-}
-
-.evenly {
-  display: flex;
-  justify-content: space-between;
-}
-
-#close:hover {
-  cursor: pointer;
-}
-
-img {
-  width: 50%;
-}
-#ideal {
-  background-color: #e0e0e0;
-  padding: 5%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
+#form {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
 }
 
 ul {
-  list-style-type: disc;
+	list-style-type: disc;
 }
 
 li {
-  margin: 2%;
+	margin: 2%;
 }
 
 input,
 button {
-  color: black;
-  padding: 1%;
-  font-size: 1rem;
+	color: black;
+	padding: 1%;
+	font-size: 1rem;
+}
+
+/* PAYMENT =========================================== */
+
+#payment {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #2d2d2d;
+	width: 43rem;
+	height: 43rem;
+	border-radius: 2px;
+	padding: 2%;
+}
+
+.blur {
+	height: 100%;
+	width: 100%;
+	filter: blur(15px);
+	z-index: 50;
+}
+
+.payment-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr;
+	column-gap: 2.5rem;
+	row-gap: 1.5rem;
+	padding-top: 2%;
+}
+
+.inner-payment {
+	background-color: #272727;
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#bank-button {
+	cursor: pointer;
+	background-color: #1a1a1a;
+	width: 75%;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+#dropdown-content {
+	z-index: 100;
+	background-color: #1a1a1a;
+	border: none;
+	width: 75%;
+	cursor: pointer;
+}
+
+#consent {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	gap: 3%;
+}
+
+.agreement {
+	grid-area: 3/1/4/2;
+}
+
+#total {
+	grid-area: 5/1/6/2;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 1rem;
+}
+
+.pay-button {
+	border: none;
+	border-radius: 2px;
+	background-color: #fcaf17;
+	min-width: fit-content;
+	padding: 2% 10% 2% 10%;
+	cursor: pointer;
+}
+
+.refund {
+	background-color: #1d364d;
+	grid-area: 6/1/7/2;
+	border-radius: 2px;
+	padding: 2%;
+}
+
+.payment-footer {
+	position: absolute;
+	/* grid-area: 7/1/8/3; */
+	background-color: #1a1a1a;
+	display: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 2%;
+	border-radius: 2px;
+}
+
+.gtavi-cover {
+	width: auto;
+	height: 70px;
+}
+
+.order-overview {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+
+.flex {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.total-cost {
+	font-size: 1.3rem;
+}
+
+span {
+	display: flex;
+	justify-content: end;
+}
+.small-txt {
+	font-size: 10px;
+}
+
+.evenly {
+	display: flex;
+	justify-content: space-between;
+}
+
+#close:hover {
+	cursor: pointer;
+}
+
+.hr1 {
+	grid-area: 4/1/5/2;
+	border: none;
+	height: 1px;
+	/* Set the hr color */
+	color: #818181; /* old IE */
+	background-color: #818181; /* Modern Browsers */
+}
+
+.color-txt {
+	color: #979797;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 1%;
+}
+
+.border-bottom {
+	border-bottom: 3px solid white;
+
+	padding-bottom: 1%;
+}
+
+/* DATA ============================= */
+
+.data-section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+	border-left: 1px solid #ddd;
+}
+
+.grid-header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-weight: bold;
+	background-color: #b85151;
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.grid-item {
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.pointer {
+	cursor: pointer;
+}
+
+#clearDataButton {
+	background-color: red;
+	border: none;
+}
+
+#refresh-page {
+	background-color: rgb(0, 187, 0);
+	border: none;
+}
+
+#clearDataButton:active,
+.refresh:active {
+	transform: scale(0.98);
+}
+
+.flex {
+	display: flex;
 }

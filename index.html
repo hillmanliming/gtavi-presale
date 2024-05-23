@@ -1,88 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTAVI Presale</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="icon" type="image/png" href="assets/img/icon.webp" />
-  </head>
-  <body>
-    <section class="container">
-      <p onclick="scrollDown()">Pre-order GTA VI<br /></p>
-    </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grand Theft Auto VI - Presale</title>
+		<link rel="stylesheet" href="assets/style/style.css" />
+		<link rel="icon" type="image/png" href="assets/img/icon.webp" />
+	</head>
+	<body>
+		<section class="container">
+			<p onclick="scrollDown()" class="pulse">Pre-order GTA VI<br /></p>
+		</section>
 
-    <section id="form-section">
-      <article>
-        <h3>
-          Grand Theft Auto VI, the long awaited sequal of the infamous GTA V is
-          nearing its launch! Pre-order now and recieve several in-game items
-          along side early acces and more, on launch day!
-        </h3>
-        <br /><br />
-        <ul>
-          <li>
-            <b>Early Access:</b> By participating in the presale, you can secure
-            a copy ahead of the official release date, ensuring you'll be among
-            the first to play GTA 6.
-          </li>
-          <li>
-            <b>Exclusive Content</b>: The preorders comes with bonuses and
-            several in-game items. One of which being a vehicle exlusive to
-            pre-order only.
-          </li>
-          <li>
-            <b>Support the developers:</b> 25% of the pre-sale profit goes to
-            the GTA VI developers at Rockstar Games who are working long and
-            hard to offer the best off launch experience they can offer. By
-            taking part in the pre-sale you can show your appreciation to them!
-          </li>
-        </ul>
-      </article>
-      <form id="form">
-        <label for="name">First name:</label>
-        <input
-          type="text"
-          id="Fname"
-          name="Fname"
-          required
-          minlength="2"
-          maxlength="10"
-        /><br /><br />
+		<section id="form-section">
+			<article>
+				<h3>
+					Grand Theft Auto VI, the long awaited sequal of the infamous GTA V is
+					nearing its launch! Pre-order now and recieve several in-game items
+					along side early acces and more, on launch day!
+				</h3>
+				<br /><br />
+				<ul>
+					<li>
+						<b>Early Access:</b> By participating in the presale, you can secure
+						a copy ahead of the official release date, ensuring you'll be among
+						the first to play GTA 6.
+					</li>
+					<li>
+						<b>Exclusive Content</b>: The preorders comes with bonuses and
+						several in-game items. One of which being a vehicle exlusive to
+						pre-order only.
+					</li>
+					<li>
+						<b>Support the developers:</b> 25% of the pre-sale profit goes to
+						the GTA VI developers at Rockstar Games who are working long and
+						hard to offer the best off launch experience they can offer. By
+						taking part in the pre-sale you can show your appreciation to them!
+					</li>
+				</ul>
+			</article>
+			<form id="form">
+				<label for="username">Username:</label>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					required
+					minlength="2"
+					maxlength="20" /><br /><br />
 
-        <label for="name">Last name :</label>
-        <input
-          type="text"
-          id="Lname"
-          name="Lname"
-          required
-          minlength="2"
-          maxlength="10"
-        /><br /><br />
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					required
+					minlength="2"
+					maxlength="10" /><br /><br />
 
-        <label for="email">Rockstar e-mail:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          maxlength="50"
-        /><br /><br />
+				<label for="email">Rockstar e-mail:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required
+					maxlength="50" /><br /><br />
 
-        <button id="submit" type="submit" value="submit" formaction="payment.html">
-          Pre-order
-        </button>
-      </form>
-    </section>
-<!-- PAYMENT PART ====================================== -->
-    <article id="payment">
-      <p>
-      <div class="evenly"><h2>GTAVI: Pre-Order</h2><div id="close">x</div></div>
-       <br>
-      PAYMENT VIA IDEAL
-      <br><br>
-        </p>
-    </article>
-  </body>
-  <script src="assets/script/javascript.js"></script>
+				<button
+					id="submit"
+					type="submit"
+					value="submit"
+					formaction="payment.html">
+					Pre-order
+				</button>
+			</form>
+		</section>
+		<!-- PAYMENT PART ====================================== -->
+		<section id="payment">
+			<div class="evenly">
+				<h2>Grand Theft Auto VI: Pre-Order</h2>
+				<div id="close">x</div>
+			</div>
+			<article class="payment-grid">
+				<div class="evenly">
+					<p class="color-txt">PAYMENT VIA IDEAL</p>
+					<p class="align-left color-txt">How to pay?</p>
+				</div>
+				<p class="color-txt">Order summary</p>
+				<article class="inner-payment">
+					<p>Grand Theft Auto VI: Pre-Order</p>
+					<p>select bank</p>
+
+					<select id="dropdown-content">
+						<option value="1" selected="selected">ABN AMRO</option>
+						<option value="2">ASN Bank</option>
+						<option value="3">SNS Bank</option>
+						<option value="3">ING</option>
+						<option value="3">Rabobank</option>
+						<option value="3">RegioBank</option>
+						<option value="3">Triodos</option>
+						<option value="3">Van Lanschot Bankiers</option>
+						<option value="3">Bunk</option>
+						<option value="3">Knab</option>
+					</select>
+
+					<form id="consent">
+						<input required type="checkbox" />
+						<p class="small-txt">
+							I consent to this purchase being immediately added to my account
+							and understand that I will lose my right to cancel my purchase
+							after it begins downloading. Details
+						</p>
+					</form>
+				</article>
+				<p class="small-txt agreement color-txt">
+					By clicking Pay Now, you confirm that you have read, understand and
+					agree to be bound by Xsolla’s End User License Agreement and other
+					applicable Legal Agreements, as well as the Rockstar Terms of Service
+					and Privacy Policy. All rules regarding your order can be found in the
+					Refund Policy. Please note that the merchant name on your payment
+					method statement will read as "Xsolla".
+				</p>
+				<hr class="hr1" />
+				<p id="total">
+					Total €84.99
+					<button class="pay-button" form="consent">PAY NOW</button>
+				</p>
+
+				<article class="refund color-txt small-txt">
+					Moderate refund policy<br />This policy allows you to request a refund
+					under several conditions.<br />Read full policy
+				</article>
+
+				<article class="payment-footer small-txt evenly">
+					<p class="color-txt">
+						Xsolla is an authorized video game software distributor providing
+						clients<br />
+						with advanced technical tools for their games.<br />
+						Privacy Policy | EULA | Refund Policy | Legal Agreements
+					</p>
+					<p class="color-txt">© 2006-2024 Xsolla<br />Secure Connection</p>
+				</article>
+
+				<article class="order-overview">
+					<div>
+						<div class="flex">
+							<img class="gtavi-cover" src="assets/img/gtav-cover.jpg" alt="" />
+							<p>
+								Grand Theft Auto VI:<br />
+								Pre-Order
+							</p>
+						</div>
+						<span>€84.99</span>
+					</div>
+					<hr />
+					<div class="evenly">
+						<p>Subtotal</p>
+						<p>€84.99</p>
+					</div>
+
+					<div class="evenly total-cost">
+						<div>
+							<p>Total</p>
+							<p class="small-txt">(Including VAT€17.36)</p>
+						</div>
+						<p>€84.99</p>
+					</div>
+				</article>
+			</article>
+		</section>
+	</body>
+	<script src="assets/script/javascript.js" defer></script>
 </html>
