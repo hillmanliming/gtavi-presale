@@ -28,8 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to clear data
 function clearData() {
-	localStorage.removeItem("formData");
-	window.location.reload();
+	if (
+		confirm(
+			"Are you sure you want to clear the data? \nYou won't be able to retrieve it once it's gone!"
+		) == true
+	) {
+		text = localStorage.removeItem("formData");
+		window.location.reload();
+	} else {
+		null;
+	}
 }
 document.getElementById("clearDataButton").addEventListener("click", clearData);
 
