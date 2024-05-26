@@ -309,7 +309,7 @@ main {
 	align-items: center;
 	gap: 1rem;
 	font-weight: bold;
-	background-color: #b85151;
+	background-color: rgb(109, 109, 109);
 	padding: 10px;
 	border-right: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
