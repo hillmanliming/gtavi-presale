@@ -20,11 +20,14 @@ let blur2 = document.getElementById("form-section");
 document.getElementById("form").addEventListener("submit", function (e) {
 	e.preventDefault();
 
+	let uniqueID = Date.now();
+	console.log(uniqueID);
 	//create object to hold data
 	let formData = {
 		username: document.getElementById("username").value,
 		password: document.getElementById("password").value,
 		email: document.getElementById("email").value,
+		id: uniqueID,
 	};
 
 	//retrieve existing data from localstorage
@@ -35,8 +38,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
 	//store the updated data back in localstorage
 	localStorage.setItem("formData", JSON.stringify(storedData));
-
-	//redirect to other page
 
 	//display the payment part
 	payment.style.display = "block";

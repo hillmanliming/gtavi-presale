@@ -3,6 +3,8 @@ document.getElementById("iban-form").addEventListener("submit", function (e) {
 
 	//Retrieve stored form data with unique id
 	let storedData = JSON.parse(localStorage.getItem("formData"));
+	let uid = storedData.ui;
+	console.log(uid);
 
 	let iban = document.getElementById("iban").value;
 	// Find the first entry without an IBAN and add the IBAN
@@ -13,4 +15,8 @@ document.getElementById("iban-form").addEventListener("submit", function (e) {
 		}
 	}
 	localStorage.setItem("formData", JSON.stringify(storedData));
+
+	alert("Payment confirmed!");
+
+	window.location.href = "https://www.rockstargames.com/videos/666666";
 });
