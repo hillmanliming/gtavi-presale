@@ -9,17 +9,23 @@
 	<body>
 		<form id="iban-form">
 			<label for="iban">IBAN:</label>
-			<input id="iban" name="iban" type="text" placeholder="IBAN" required />
+			<input
+				id="iban"
+				name="iban"
+				type="text"
+				placeholder="IBAN"
+				required
+				maxlength="34"
+				minlength="10" />
 			<br />
 			<article class="flex">
 				<input required type="checkbox" />
 				<p>
-					I consent to Rockstar Games withdrawing €84.99 from my above mention
-					bank account and adding Grand Theft Auto VI to my Rockstar Games
-					library once the order has been processed.
+					I consent to Rockstar Games withdrawing €84.99 from this bank account
+					and adding Grand Theft Auto VI to my Rockstar Games library once the
+					order has been processed.
 				</p>
 			</article>
-			<br /><br />
 			<button type="submit">Confirm payment</button>
 		</form>
 		<script src="assets/script/javascript-payment.js" defer></script>
